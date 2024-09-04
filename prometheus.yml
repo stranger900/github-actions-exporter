@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'github_actions'
+    static_configs:
+      - targets: ['github-actions-exporter:8080']
